@@ -75,7 +75,7 @@
     const minuteHand = document.querySelector('.min-hand');
     const hourHand = document.querySelector('.hour-hand')
 
-    function setDate() {
+    const setDate = () => {
       const currentTime = new Date();
 
       const seconds = currentTime.getSeconds();
@@ -83,7 +83,7 @@
 
       const minutes = currentTime.getMinutes();
       const minutesDegrees = ((minutes / 60) * 360) + 90
-      
+
       const hours = currentTime.getHours();
       const hoursDegress = ((hours / 12) * 360) + 90;
 
