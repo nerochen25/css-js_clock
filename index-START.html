@@ -18,7 +18,7 @@
 
   <style>
     html {
-      background: #018DED url(https://media1.tenor.com/images/0c01a73fc25f935e241bb25bc8950141/tenor.gif?itemid=3536921);
+      background: #018DED url(https://steamuserimages-a.akamaihd.net/ugc/156903125568395975/D5BC638F55520776380EAF8B614855D563F3DF19/);
       background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
@@ -35,9 +35,9 @@
     }
 
     .clock {
-      width: 30rem;
-      height: 30rem;
-      border: 20px solid #6ccdc470;
+      width: 50rem;
+      height: 50rem;
+      border: 20px solid #897650;
       border-radius: 50%;
       margin: 50px auto;
       position: relative;
@@ -88,11 +88,12 @@
       const hoursDegress = ((hours / 12) * 360) + 90;
 
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-      secondHand.style.background = '#4cbd4cbf';
+      secondHand.style.background = '#a7e7dd';
       secondHand.style.height = '3px';
       minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
       hourHand.style.transform = `rotate(${hoursDegress}deg)`;
       hourHand.style.height = '12px';
+      hourHand.style.background = '#a7e7dd'
     }
 
     setInterval(setDate, 1000);
