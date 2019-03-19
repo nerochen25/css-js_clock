@@ -67,7 +67,16 @@
   </style>
 
   <script>
+    function setDate() {
+      const currentTime = new Date();
+      const seconds = currentTime.getSeconds();
+      const minutes = currentTime.getMinutes();
+      const hours = currentTime.getHours();
 
+      console.log(`${hours}:${minutes}:${seconds}`);
+    }
+
+    setInterval(setDate, 1000);
 
   </script>
 </body>
