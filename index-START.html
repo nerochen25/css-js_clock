@@ -37,7 +37,7 @@
     .clock {
       width: 50rem;
       height: 50rem;
-      border: 20px solid #897650;
+      border: 25px solid #f2de4b;
       border-radius: 50%;
       margin: 50px auto;
       position: relative;
@@ -88,12 +88,12 @@
       const hoursDegress = ((hours / 12) * 360) + 90;
 
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-      secondHand.style.background = '#a7e7dd';
+      secondHand.style.background = '#b2dff4';
       secondHand.style.height = '3px';
       minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
       hourHand.style.transform = `rotate(${hoursDegress}deg)`;
       hourHand.style.height = '12px';
-      hourHand.style.background = '#a7e7dd'
+      hourHand.style.background = '#b2dff4'
     }
 
     setInterval(setDate, 1000);
